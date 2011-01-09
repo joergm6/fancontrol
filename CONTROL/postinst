@@ -1,5 +1,4 @@
 #!/bin/sh
-mv /usr/lib/enigma2/python/Plugins/Extensions/WebInterface/web-data/fc2/diagram.class.org /usr/lib/enigma2/python/Plugins/Extensions/WebInterface/web-data/fc2/diagram.class > /dev/null 2>&1
 echo "*                               *"
 echo "* plugin installed successfully *"
 echo "*                               *"

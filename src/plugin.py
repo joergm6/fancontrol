@@ -1,6 +1,6 @@
 # FanControl2
 # joergm6 IHAD
-Version = "V2.4r3"
+Version = "V2.4r4"
 import time
 import os
 from __init__ import _
@@ -832,6 +832,8 @@ class FanControl2(Screen):
 		self.Fan        = "aus"
 		self.dontshutdown = False
 		FClog("Starting up")
+		if os.path.exists("/usr/lib/enigma2/python/Plugins/Extensions/WebInterface/web-data/fc2/diagram.class.org"):
+			os.rename("/usr/lib/enigma2/python/Plugins/Extensions/WebInterface/web-data/fc2/diagram.class.org","/usr/lib/enigma2/python/Plugins/Extensions/WebInterface/web-data/fc2/diagram.class")
 		if not isDMMdisabled() and config.plugins.FanControl.DisableDMM.value:
 			disableDMM()
 		Box = GetBox()
